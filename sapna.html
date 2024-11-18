@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PHP Switch Case Form</title>
+    <script>
+        function showMessage() {
+            const input = document.getElementById('numberInput').value;
+            const message = document.getElementById('message');
+            let output = '';
+
+            switch(input) {
+                case '20':
+                    output = "Shubam's Girlfriend Sapna";
+                    break;
+                case '18':
+                    output = "Dinesh's Girlfriend Sapna";
+                    break;
+                case '19':
+                    output = "Vinod's Girlfriend Sapna";
+                    break;
+                case '17':
+                    output = "Gajja's Girlfriend Sapna";
+                    break;
+                case '16':
+                    output = "Rajesh's Girlfriend Sapna";
+                    break;
+                    
+                default:
+                    output = "You Are Nibbi In This Age🤡";
+            }
+
+            message.innerHTML = output;
+        }
+    </script>
+</head>
+<body class="sapna">
+    <h1>Sapna Loyalty Test</h1>
+    <form class="sapna">
+        <label for="numberInput" style="color: black;font-size: 30px;">Enter a number: Dear Sapna</label>
+        <input class="sapna" type="text" id="numberInput" name="numberInput" oninput="showMessage()">
+    </form>
+    <p id="message"></p>
+    <style>
+        .hlo{
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.shiva{
+    text-align: center;
+    font-size: 25px;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(226, 162, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}  
+
+.sapna{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30.sp;
+    color: rgb(255, 0, 0);
+}
+*{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30.sp;
+}
+
+    </style>
+</body>
+</html>
